@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+    --primary: 217.2 91.2% 59.8%;
+    --secondary: 210 40% 96.1%;
+}
+
+body {
+    background-color: rgb(2 6 23);
+    color: white;
+}
