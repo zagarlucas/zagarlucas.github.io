@@ -1,26 +1,25 @@
-import { Header } from '@/features/cv/components/Header';
-import { Experience } from '@/features/cv/components/Experience';
-import { Skills } from '@/features/cv/components/Skills';
+import Link from 'next/link';
 
 export default function Home() {
     return (
-        <main className="min-h-screen bg-slate-950 text-white p-8 sm:p-24 selection:bg-blue-500/30">
-            <div className="max-w-4xl mx-auto">
-                <Header />
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div className="md:col-span-2">
-                        <Experience />
-                    </div>
-                    <div>
-                        <Skills />
-                        <section className="mt-12">
-                            <h2 className="text-xl font-bold mb-4">Sobre mí</h2>
-                            <p className="text-slate-400 text-sm leading-relaxed">
-                                Desarrollador apasionado por crear arquitectura de software limpia, escalable y eficiente.
-                            </p>
-                        </section>
-                    </div>
-                </div>
+        <main className="min-h-screen flex flex-col items-center justify-center bg-slate-950 text-slate-200 gap-8 font-sans selection:bg-blue-500/30">
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+                Resumé Versions
+            </h1>
+            <p className="text-slate-400">Select a version to view</p>
+            <div className="flex gap-6">
+                <Link
+                    href="/cv/v1"
+                    className="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold transition-colors shadow-lg shadow-blue-900/20"
+                >
+                    View Version 1 (Literal)
+                </Link>
+                <Link
+                    href="/cv/v2"
+                    className="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-semibold transition-colors shadow-lg shadow-emerald-900/20"
+                >
+                    View Version 2 (Optimized)
+                </Link>
             </div>
         </main>
     );
