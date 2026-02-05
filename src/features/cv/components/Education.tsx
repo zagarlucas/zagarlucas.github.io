@@ -6,17 +6,35 @@ interface EducationProps {
 
 export const Education = ({ data }: EducationProps) => {
     return (
-        <section className="mb-12">
-            <h2 className="text-2xl font-bold bg-slate-800 inline-block px-3 py-1 rounded-md mb-6">Formación Académica</h2>
-            <div className="space-y-6">
+        <section className="mb-16">
+            <div className="flex items-center gap-3 mb-8">
+                <span className="text-2xl">🎓</span>
+                <h2 className="text-3xl font-bold text-slate-100">Formación Académica</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
                 {data.education.map((edu, index) => (
-                    <div key={index} className="flex flex-col md:flex-row md:justify-between md:items-start border-b border-slate-800 pb-4 last:border-0 hover:bg-slate-900/30 p-2 rounded transition-colors">
-                        <div>
-                            <h3 className="text-lg font-bold text-slate-100">{edu.degree}</h3>
-                            <p className="text-slate-400">{edu.institution}</p>
-                            {edu.description && <p className="text-slate-500 text-sm mt-1">{edu.description}</p>}
+                    <div key={index} className="group p-6 rounded-2xl bg-slate-900/30 border border-slate-800/50 hover:border-blue-500/30 hover:bg-slate-900/50 transition-all">
+                        <div className="flex justify-between items-start mb-2">
+                            {edu.certificateUrl ? (
+                                <a
+                                    href={edu.certificateUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group/link"
+                                >
+                                    <h3 className="text-lg font-bold text-slate-100 group-hover/link:text-blue-400 transition-colors flex items-center gap-2">
+                                        {edu.degree}
+                                        <span className="text-blue-500 text-sm opacity-50 group-hover/link:opacity-100 transition-opacity">📜</span>
+                                    </h3>
+                                </a>
+                            ) : (
+                                <h3 className="text-lg font-bold text-slate-100">{edu.degree}</h3>
+                            )}
+                            <span className="text-xs font-mono text-slate-500 bg-slate-950 px-2 py-1 rounded">{edu.year}</span>
                         </div>
-                        <span className="text-blue-400 font-mono text-sm mt-2 md:mt-0 bg-blue-900/20 px-2 py-1 rounded">{edu.year}</span>
+                        <p className="text-emerald-400 font-medium text-sm mb-2">{edu.institution}</p>
+                        {edu.description && <p className="text-slate-500 text-sm">{edu.description}</p>}
                     </div>
                 ))}
             </div>

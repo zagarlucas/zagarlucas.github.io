@@ -17,9 +17,11 @@ export interface EducationItem {
     degree: string;
     year: string;
     description?: string; // Added for extra details like GPA
+    certificateUrl?: string; // Link to diploma or certificate
 }
 
 export interface CVData {
+    image?: string; // Added image field
     name: string;
     title: string;
     email: string;
@@ -31,6 +33,6 @@ export interface CVData {
     experience: ExperienceItem[];
     education: EducationItem[];
     links: CVLink;
-    languages?: string[]; // Added languages
-    softSkills?: string[]; // Added soft skills
+    languages?: string[];
+    softSkills?: string[];
 }
