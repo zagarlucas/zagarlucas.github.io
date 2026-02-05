@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 
 import { CV_DATA } from '@/lib/cv-data';
 
@@ -23,7 +24,7 @@ export default function CVPrintPage() {
             <div className="print:hidden mb-8 p-4 bg-yellow-50 border border-yellow-200 text-yellow-800 rounded-lg text-center max-w-2xl mx-auto mt-8">
                 <p className="font-bold">Vista de Impresión (A4 Optimizado)</p>
                 <p className="text-sm">Presiona <kbd className="font-mono bg-white px-1 border rounded">Ctrl + P</kbd> para guardar como PDF.</p>
-                <p className="text-xs mt-1 text-yellow-600">Asegúrate de seleccionar "Márgenes: Ninguno" y activar "Gráficos de fondo".</p>
+                <p className="text-xs mt-1 text-yellow-600">Asegúrate de seleccionar &quot;Márgenes: Ninguno&quot; y activar &quot;Gráficos de fondo&quot;.</p>
             </div>
 
             {/* A4 Container - 210mm wide x 297mm high (max) */}

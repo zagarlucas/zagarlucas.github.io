@@ -5,8 +5,12 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Next.js Arch',
-    description: 'Production ready architecture',
+    title: 'Lucas Zagar | Curriculum Vitae',
+    description: 'Versión web interactiva de mi CV profesional.',
+    robots: {
+        index: false,
+        follow: false,
+    },
 };
 
 export default function RootLayout({
