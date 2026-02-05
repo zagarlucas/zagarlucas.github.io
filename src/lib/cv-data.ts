@@ -50,7 +50,7 @@ export const CV_DATA: CVData = {
     education: [
         {
             institution: "Coderhouse",
-            degree: "Carrera de Desarrollo Web Full Stack",
+            degree: "Curso de Desarrollo Web",
             year: "2022",
             description: "Promedio: 9/10. Enfoque en arquitectura web, maquetado responsive y preprocesadores.",
             certificateUrl: "https://drive.google.com/file/d/12NGXuBNdfzZxlcwAXgKCzeOaZUe3vq0A/view?usp=sharing"
