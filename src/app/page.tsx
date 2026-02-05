@@ -7,7 +7,7 @@ import { Education } from '@/features/cv/components/Education';
 
 export default function cv() {
     return (
-        <main className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-blue-500/30 pb-20">
+        <main className="min-h-screen bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-cyan-50 via-neutral-900 to-neutral-900 text-zinc-300 font-sans selection:bg-blue-500/30 pb-20">
 
             {/* Floating Print Button */}
             <div className="fixed bottom-8 right-8 z-50">

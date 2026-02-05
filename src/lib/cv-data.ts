@@ -4,7 +4,7 @@ export const CV_DATA: CVData = {
     image: "/media/profile.jpg", // Placeholder - User can replace this later
     name: "LUCAS ZAGAR",
     title: "Administrativo y Desarrollador Web jr",
-    email: "lucaszagar1@hotmail.com",
+    email: "[EMAIL_ADDRESS]",
     location: "Buenos Aires, Argentina (Zona Norte)",
     phone: "+5491168575717",
     about: "Desarrollador Web orientado a resultados con sólida experiencia en la transformación digital de procesos administrativos y comerciales. Especializado en la implementación de soluciones e-commerce (Odoo), automatización con chatbots (Botmaker) y optimización de flujos de trabajo. Combino habilidades técnicas en desarrollo frontend con una fuerte capacidad de gestión y visión de negocio, habiendo liderado integraciones tecnológicas que mejoran la eficiencia operativa y la experiencia del cliente.",
