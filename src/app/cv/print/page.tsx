@@ -54,6 +54,7 @@ export default function CVPrintPage() {
                                 <span className="flex items-center gap-1.5 whitespace-nowrap">📍 {CV_DATA.location}</span>
                                 <span className="flex items-center gap-1.5 whitespace-nowrap">✉️ {CV_DATA.email}</span>
                                 {CV_DATA.phone && <span className="flex items-center gap-1.5 whitespace-nowrap">📞 {CV_DATA.phone}</span>}
+                                {CV_DATA.driverLicense && <span className="flex items-center gap-1.5 whitespace-nowrap">🚗 {CV_DATA.driverLicense}</span>}
                             </div>
                         </div>
                     </div>

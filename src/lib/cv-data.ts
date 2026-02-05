@@ -7,6 +7,7 @@ export const CV_DATA: CVData = {
     email: "lucaszagar1@hotmail.com",
     location: "Buenos Aires, Argentina (Zona Norte)",
     phone: "+5491168575717",
+    driverLicense: "Licencia B1 (Vigente hasta 2029)",
     about: "Desarrollador Web orientado a resultados con sólida experiencia en la transformación digital de procesos administrativos y comerciales. Especializado en la implementación de soluciones e-commerce (Odoo), automatización con chatbots (Botmaker) y optimización de flujos de trabajo. Combino habilidades técnicas en desarrollo frontend con una fuerte capacidad de gestión y visión de negocio, habiendo liderado integraciones tecnológicas que mejoran la eficiencia operativa y la experiencia del cliente.",
     skills: [
         "JavaScript (ES6+)", "Node.js",

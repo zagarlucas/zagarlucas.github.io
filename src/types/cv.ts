@@ -35,4 +35,5 @@ export interface CVData {
     links: CVLink;
     languages?: string[];
     softSkills?: string[];
+    driverLicense?: string;
 }

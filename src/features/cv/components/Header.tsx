@@ -48,6 +48,11 @@ export const Header = ({ data }: HeaderProps) => {
                             <span className="text-cyan-400">📞</span> {data.phone}
                         </span>
                     )}
+                    {data.driverLicense && (
+                        <span className="flex items-center gap-2">
+                            <span className="text-cyan-400">🚗</span> {data.driverLicense}
+                        </span>
+                    )}
                 </div>
 
                 <div className="flex justify-center md:justify-start gap-3 mb-6">
