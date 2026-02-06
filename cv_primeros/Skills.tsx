@@ -1,4 +1,4 @@
-import { CVData } from '@/types/cv';
+import { CVData } from '../src/types/cv';
 
 interface SkillsProps {
     data: CVData;

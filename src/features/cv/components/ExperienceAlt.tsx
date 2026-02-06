@@ -11,7 +11,7 @@ export const ExperienceAlt = ({ data }: ExperienceProps) => {
                 <span className="shrink-0">
                     <img src="/media/trabajo.png" alt="trabajo" className="w-8 h-8 object-contain brightness-0 invert" />
                 </span>
-                <h2 className="text-3xl font-bold text-zinc-100">Trayectoria Profesional</h2>
+                <h2 className="text-3xl font-bold text-zinc-100 uppercase tracking-tight">Experiencia Laboral</h2>
             </div>
 
             <div className="relative space-y-12">
@@ -24,8 +24,20 @@ export const ExperienceAlt = ({ data }: ExperienceProps) => {
                         <div className="absolute left-[9px] top-2 w-4 h-4 rounded-full border-2 border-zinc-900 bg-zinc-600 group-hover:bg-cyan-500 group-hover:scale-110 transition-all z-10" />
 
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
-                            <h3 className="text-xl font-bold text-zinc-100 group-hover:text-cyan-400 transition-colors">
-                                {exp.company}
+                            <h3 className="text-xl font-bold text-zinc-100 group-hover:text-cyan-400 transition-colors flex items-center gap-2">
+                                {exp.companyUrl ? (
+                                    <a
+                                        href={exp.companyUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="hover:underline decoration-cyan-500/30 flex items-center gap-2"
+                                    >
+                                        {exp.company}
+                                        <span className="text-xs opacity-0 group-hover:opacity-50 transition-opacity">🔗</span>
+                                    </a>
+                                ) : (
+                                    exp.company
+                                )}
                             </h3>
                             <span className="text-sm font-mono text-zinc-500 bg-zinc-900/50 px-2 py-1 rounded">
                                 {exp.period}

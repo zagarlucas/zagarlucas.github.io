@@ -8,20 +8,20 @@ export const SkillsAlt = ({ data }: SkillsProps) => {
     return (
         <section className="mb-16">
             <div className="flex items-center gap-3 mb-8">
-                <span className="text-3xl text-cyan-400">
-                    <i className="fa-solid fa-laptop-code"></i>
+                <span className="shrink-0">
+                    <img src="/media/pantalla-del-ordenador.png" alt="Habilidades Tech" className="w-8 h-8 object-contain brightness-0 invert" />
                 </span>
-                <h2 className="text-3xl font-bold text-zinc-100">Habilidades & Competencias</h2>
+                <h2 className="text-3xl font-bold text-zinc-100 uppercase tracking-tight">HABILIDADES</h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="grid grid-cols-1 gap-8 mb-12">
                 {data.categorizedSkills?.map((category) => (
                     <div
                         key={category.name}
                         className="p-6 bg-zinc-800/20 border border-zinc-700/30 rounded-2xl hover:bg-zinc-800/40 transition-all group"
                     >
-                        <h3 className="text-xl font-bold text-cyan-400 mb-6 flex items-center gap-2">
-                            <span className="w-1.5 h-1.5 bg-cyan-500 rounded-full group-hover:scale-150 transition-transform" />
+                        <h3 className="text-xl font-bold text-cyan-400 mb-6 flex items-center gap-3">
+                            <span className="w-2 h-2 bg-cyan-500 rounded-full group-hover:scale-150 transition-transform shrink-0 mt-1" />
                             {category.name}
                         </h3>
                         <div className="flex flex-wrap gap-2">
@@ -38,12 +38,15 @@ export const SkillsAlt = ({ data }: SkillsProps) => {
                 ))}
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 gap-8">
                 {/* Soft Skills */}
                 {data.softSkills && data.softSkills.length > 0 && (
                     <div>
                         <h3 className="text-lg font-bold text-zinc-300 mb-6 flex items-center gap-2 uppercase tracking-tight">
-                            🧠 Soft Skills
+                            <span className="shrink-0">
+                                <img src="/media/cerebro.png" alt="Soft Skills" className="w-6 h-6 object-contain brightness-0 invert" />
+                            </span>
+                            Soft Skills
                         </h3>
                         <div className="flex flex-wrap gap-2">
                             {data.softSkills.map((skill) => (
@@ -62,7 +65,10 @@ export const SkillsAlt = ({ data }: SkillsProps) => {
                 {data.languages && data.languages.length > 0 && (
                     <div>
                         <h3 className="text-lg font-bold text-zinc-300 mb-6 flex items-center gap-2 uppercase tracking-tight">
-                            🌍 Idiomas
+                            <span className="shrink-0">
+                                <img src="/media/idioma-extranjero.png" alt="Idiomas" className="w-6 h-6 object-contain brightness-0 invert" />
+                            </span>
+                            Idiomas
                         </h3>
                         <div className="space-y-3">
                             {data.languages.map((lang) => (

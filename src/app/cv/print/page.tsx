@@ -48,23 +48,30 @@ export default function CVPrintPage() {
 
                         <div className="flex-1">
                             <h1 className="text-3xl font-black uppercase tracking-tight mb-1">{CV_DATA.name}</h1>
-                            <p className="text-lg text-blue-200 font-medium">{CV_DATA.title}</p>
+                            <p className="text-lg text-blue-200 font-medium mb-1">{CV_DATA.title}</p>
+                            {CV_DATA.professionalClaim && (
+                                <p className="text-[10px] text-slate-300 font-semibold mb-2 uppercase tracking-wide opacity-90">{CV_DATA.professionalClaim}</p>
+                            )}
 
-                            <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-xs text-slate-300 font-semibold">
+                            <p className="text-[10px] text-slate-200 leading-tight mb-3 opacity-80 max-w-xl">
+                                {CV_DATA.intro}
+                            </p>
+
+                            <div className="flex flex-wrap gap-x-4 gap-y-1 text-[10px] text-slate-300 font-semibold border-t border-slate-800 pt-2">
                                 <span className="flex items-center gap-1.5 whitespace-nowrap">
-                                    <img src="/media/ubicacion.png" alt="Ubicación" className="w-3 h-3 object-contain brightness-0 invert" /> {CV_DATA.location}
+                                    <img src="/media/ubicacion.png" alt="Ubicación" className="w-2.5 h-2.5 object-contain brightness-0 invert" /> {CV_DATA.location}
                                 </span>
                                 <span className="flex items-center gap-1.5 whitespace-nowrap">
-                                    <img src="/media/correo-de-propaganda.png" alt="Correo" className="w-3 h-3 object-contain brightness-0 invert" /> {CV_DATA.email}
+                                    <img src="/media/correo-de-propaganda.png" alt="Correo" className="w-2.5 h-2.5 object-contain brightness-0 invert" /> {CV_DATA.email}
                                 </span>
                                 {CV_DATA.phone && (
                                     <span className="flex items-center gap-1.5 whitespace-nowrap">
-                                        <img src="/media/telefono-inteligente.png" alt="Celular" className="w-3 h-3 object-contain brightness-0 invert" /> {CV_DATA.phone}
+                                        <img src="/media/telefono-inteligente.png" alt="Celular" className="w-2.5 h-2.5 object-contain brightness-0 invert" /> {CV_DATA.phone}
                                     </span>
                                 )}
                                 {CV_DATA.driverLicense && (
                                     <span className="flex items-center gap-1.5 whitespace-nowrap">
-                                        <img src="/media/licencia-de-conducir.png" alt="Licencia" className="w-3 h-3 object-contain brightness-0 invert" /> {CV_DATA.driverLicense}
+                                        <img src="/media/licencia-de-conducir.png" alt="Licencia" className="w-2.5 h-2.5 object-contain brightness-0 invert" /> {CV_DATA.driverLicense}
                                     </span>
                                 )}
                             </div>
@@ -79,10 +86,15 @@ export default function CVPrintPage() {
                     <div className="p-8 pr-6 space-y-5">
                         {/* Profile */}
                         <section>
-                            <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-2 pb-1">Perfil Profesional</h2>
-                            <p className="text-[11px] text-justify leading-snug text-slate-800">
-                                {CV_DATA.about}
-                            </p>
+                            <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-2 pb-1 flex items-center gap-2">
+                                <span className="text-sm">👤</span>
+                                SOBRE MÍ
+                            </h2>
+                            <div className="text-[11px] text-justify leading-snug text-slate-800 space-y-2">
+                                {CV_DATA.about.split('\n\n').map((p, i) => (
+                                    <p key={i}>{p}</p>
+                                ))}
+                            </div>
                         </section>
 
                         {/* Experience */}
@@ -95,13 +107,13 @@ export default function CVPrintPage() {
                                 {CV_DATA.experience.map((exp, i) => (
                                     <div key={i}>
                                         <div className="flex justify-between items-baseline mb-0.5">
-                                            <h3 className="font-bold text-slate-900 text-[12.5px]">{exp.role}</h3>
+                                            <h3 className="font-bold text-slate-900 text-[12px]">{exp.company}</h3>
                                             <span className="text-[9px] font-bold text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded uppercase">{exp.period}</span>
                                         </div>
-                                        <div className="text-[11px] text-blue-700 font-bold mb-1">{exp.company}</div>
-                                        <div className="text-[10px] text-slate-700 leading-tight">
+                                        <div className="text-[10.5px] text-blue-700 font-bold mb-1">{exp.role}</div>
+                                        <div className="text-[9.5px] text-slate-700 leading-tight">
                                             {Array.isArray(exp.description) ? (
-                                                <ul className="list-disc list-outside ml-3.5 space-y-1">
+                                                <ul className="list-disc list-outside ml-3.5 space-y-0.5">
                                                     {exp.description.map((item, idx) => (
                                                         <li key={idx} className="pl-1">{item}</li>
                                                     ))}
@@ -125,22 +137,28 @@ export default function CVPrintPage() {
                                 {CV_DATA.education.map((edu, i) => (
                                     <div key={i}>
                                         <div className="flex justify-between items-baseline">
-                                            <h3 className="font-bold text-slate-900 text-[12px]">
-                                                {edu.certificateUrl ? (
-                                                    <a href={edu.certificateUrl} target="_blank" rel="noopener noreferrer" className="hover:text-blue-700 underline decoration-blue-200 decoration-1 underline-offset-2">
-                                                        {edu.degree}
-                                                    </a>
-                                                ) : (
-                                                    edu.degree
-                                                )}
+                                            <h3 className="font-bold text-slate-900 text-[11px]">
+                                                {edu.degree}
                                             </h3>
-                                            <span className="text-[10px] text-slate-500 font-medium">{edu.year}</span>
+                                            <span className="text-[9px] text-slate-500 font-medium">{edu.year}</span>
                                         </div>
-                                        <div className="text-[11px] text-slate-600">{edu.institution}</div>
-                                        {edu.description && <div className="text-[10px] text-slate-500 italic mt-0.5">{edu.description}</div>}
+                                        <div className="text-[10px] text-slate-600">{edu.institution}</div>
                                     </div>
                                 ))}
                             </div>
+                        </section>
+
+                        {/* Value Proposition */}
+                        <section>
+                            <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-2 pb-1 flex items-center gap-2">
+                                <span className="text-sm">⭐</span>
+                                ¿QUÉ PUEDO APORTAR?
+                            </h2>
+                            <ul className="text-[10px] text-slate-700 space-y-1 list-disc list-inside">
+                                {CV_DATA.valueProposition?.map((item, i) => (
+                                    <li key={i}>{item}</li>
+                                ))}
+                            </ul>
                         </section>
                     </div>
 
@@ -165,43 +183,35 @@ export default function CVPrintPage() {
                             </div>
                         </section>
 
-                        {/* Stack Tecnológico */}
+                        {/* Habilidades */}
                         <section className="mb-6">
                             <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-3 pb-1 flex items-center gap-2">
                                 <img src="/media/pantalla-del-ordenador.png" alt="Tech Stack" className="w-3 h-3 object-contain" />
-                                Stack Tecnológico
+                                HABILIDADES
                             </h2>
-                            <div className="flex flex-wrap gap-1.5">
-                                {CV_DATA.skills.map((skill, i) => (
-                                    <span key={i} className="text-[9px] font-bold bg-white px-2 py-0.5 rounded border border-slate-200 text-slate-700 shadow-sm uppercase">
-                                        {skill}
-                                    </span>
+                            <div className="space-y-4">
+                                {CV_DATA.categorizedSkills?.map((category, i) => (
+                                    <div key={i}>
+                                        <h3 className="text-[9px] font-bold text-blue-700 mb-1.5 uppercase">{category.name}</h3>
+                                        <div className="flex flex-wrap gap-1">
+                                            {category.skills.map((skill, j) => (
+                                                <span key={j} className="text-[8px] bg-white px-1.5 py-0.5 rounded border border-slate-200 text-slate-600">
+                                                    {skill}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
                                 ))}
                             </div>
                         </section>
 
-                        {/* Soft Skills */}
-                        {CV_DATA.softSkills && (
-                            <section className="mb-6">
-                                <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-3 pb-1 flex items-center gap-2">
-                                    <img src="/media/cerebro.png" alt="Soft Skills" className="w-3 h-3 object-contain" />
-                                    Competencias
-                                </h2>
-                                <ul className="text-[10px] text-slate-700 space-y-1.5 font-medium">
-                                    {CV_DATA.softSkills.map((skill, i) => (
-                                        <li key={i} className="flex items-center gap-2">
-                                            <span className="w-1 h-1 bg-blue-500 rounded-full"></span>
-                                            {skill}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </section>
-                        )}
-
                         {/* Languages */}
                         {CV_DATA.languages && (
                             <section className="mb-6">
-                                <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-3 pb-1">Idiomas</h2>
+                                <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-3 pb-1 flex items-center gap-2">
+                                    <span className="text-sm">🌍</span>
+                                    IDIOMAS
+                                </h2>
                                 <div className="space-y-1.5">
                                     {CV_DATA.languages.map((lang, i) => (
                                         <div key={i} className="text-[9px] font-semibold bg-white p-1.5 rounded border border-slate-200 text-slate-700 shadow-sm leading-tight text-center">

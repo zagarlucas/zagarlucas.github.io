@@ -7,6 +7,7 @@ export interface CVLink {
 
 export interface ExperienceItem {
     company: string;
+    companyUrl?: string;
     role: string;
     period: string;
     description: string | string[]; // Allow array for bullet points
@@ -42,6 +43,7 @@ export interface CVData {
     softSkills?: string[];
     driverLicense?: string;
     professionalClaim?: string;
+    intro?: string;
     valueProposition?: string[];
     categorizedSkills?: SkillCategory[];
 }

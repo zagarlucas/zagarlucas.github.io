@@ -1,4 +1,4 @@
-import { CVData } from '@/types/cv';
+import { CVData, ExperienceItem } from '../src/types/cv';
 
 interface ExperienceProps {
     data: CVData;
@@ -18,7 +18,7 @@ export const Experience = ({ data }: ExperienceProps) => {
                 {/* Vertical Line */}
                 <div className="absolute top-2 left-3.5 bottom-2 w-0.5 bg-gradient-to-b from-zinc-700 via-zinc-800 to-transparent" />
 
-                {data.experience.map((exp, index) => (
+                {data.experience.map((exp: ExperienceItem, index: number) => (
                     <div key={index} className="relative pl-10 group">
                         {/* Timeline Dot */}
                         <div className="absolute left-[9px] top-2 w-4 h-4 rounded-full border-2 border-zinc-900 bg-zinc-600 group-hover:bg-cyan-500 group-hover:scale-110 transition-all z-10" />
@@ -39,7 +39,7 @@ export const Experience = ({ data }: ExperienceProps) => {
                         <div className="text-zinc-400 leading-relaxed text-sm md:text-base">
                             {Array.isArray(exp.description) ? (
                                 <ul className="space-y-2">
-                                    {exp.description.map((desc, i) => (
+                                    {exp.description.map((desc: string, i: number) => (
                                         <li key={i} className="flex items-start gap-2">
                                             <span className="mt-2 w-1 h-1 rounded-full bg-zinc-600 shrink-0" />
                                             <span>{desc}</span>
