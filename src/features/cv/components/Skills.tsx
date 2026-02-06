@@ -11,7 +11,9 @@ export const Skills = ({ data }: SkillsProps) => {
                 {/* Tech Skills */}
                 <div>
                     <div className="flex items-center gap-3 mb-6">
-                        <span className="text-2xl">⚡</span>
+                        <span className="shrink-0">
+                            <img src="media/pantalla-del-ordenador.png" alt="Habilidades Tech" className="w-8 h-8 object-contain brightness-0 invert" />
+                        </span>
                         <h2 className="text-2xl font-bold text-zinc-100">Tech Stack</h2>
                     </div>
                     <div className="flex flex-wrap gap-2">
@@ -31,7 +33,9 @@ export const Skills = ({ data }: SkillsProps) => {
                     {data.softSkills && data.softSkills.length > 0 && (
                         <div>
                             <div className="flex items-center gap-3 mb-6">
-                                <span className="text-2xl">🧠</span>
+                                <span className="shrink-0">
+                                    <img src="media/cerebro.png" alt="Soft Skills" className="w-8 h-8 object-contain brightness-0 invert" />
+                                </span>
                                 <h2 className="text-2xl font-bold text-zinc-100">Soft Skills</h2>
                             </div>
                             <div className="flex flex-wrap gap-2">

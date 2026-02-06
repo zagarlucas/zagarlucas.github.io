@@ -1,14 +1,31 @@
 import { CVData } from '@/types/cv';
 
 export const CV_DATA: CVData = {
-    image: "/media/profile.jpg", // Placeholder - User can replace this later
+    image: "/media/profile.jpg",
     name: "LUCAS ZAGAR",
-    title: "Administrativo y Desarrollador Web jr",
+    title: "Administrativo y Comercial con perfil Digital",
+    professionalClaim: "Optimización de procesos · Ventas · Desarrollo Web Jr. · Automatización",
     email: "lucaszagar1@hotmail.com",
     location: "Buenos Aires, Argentina (Zona Norte)",
     phone: "+5491168575717",
     driverLicense: "Licencia B1 (Vigente hasta 2029)",
-    about: "Desarrollador Web orientado a resultados con sólida experiencia en la transformación digital de procesos administrativos y comerciales. Especializado en la implementación de soluciones e-commerce (Odoo), automatización con chatbots (Botmaker) y optimización de flujos de trabajo. Combino habilidades técnicas en desarrollo frontend con una fuerte capacidad de gestión y visión de negocio, habiendo liderado integraciones tecnológicas que mejoran la eficiencia operativa y la experiencia del cliente.",
+    about: "Desarrollador Web orientado a resultados con sólida experiencia en la transformación digital de procesos administrativos y comerciales. Especializado en la implementación de soluciones e-commerce (Odoo), automatización con chatbots (Botmaker) y optimización de flujos de trabajo.",
+    valueProposition: [
+        "Organización y mejora de procesos administrativos",
+        "Perfil híbrido: administrativo + digital (Odoo, SEO, Bots)",
+        "Capacidad de aprendizaje rápido y adaptación",
+        "Comunicación clara con clientes y equipos de venta"
+    ],
+    categorizedSkills: [
+        {
+            name: "Administrativas / Comerciales",
+            skills: ["Atención al cliente", "Facturación", "Gestión de pedidos", "Soporte a equipos de venta", "Word", "Excel"]
+        },
+        {
+            name: "Digitales / Técnicas",
+            skills: ["HTML · CSS · Bootstrap", "JavaScript (ES6+) · Node.js", "Odoo ERP", "SEO Tech & Analytics", "Git / GitHub", "Automatización (Bots / Botmaker)"]
+        }
+    ],
     skills: [
         "JavaScript (ES6+)", "Node.js",
         "HTML5 / CSS3 / SASS",
@@ -18,13 +35,13 @@ export const CV_DATA: CVData = {
     experience: [
         {
             company: "Herrajes Bonzini",
-            role: "Administrativo y desarrollo web",
+            role: "Ventas & Desarrollo Web",
             period: "Marzo 2025 – Febrero 2026",
             description: [
-                "Lideré la transformación digital del canal de ventas, desarrollando e implementando el e-commerce de la empresa en Odoo, gestionando un catálogo de +300 productos.",
-                "Desarrollé y lancé un Bot de WhatsApp inteligente (Botmaker) en un periodo de 3 semanas, automatizando la atención de primer nivel y consultas de clientes, reduciendo tiempos de respuesta en gran medida gracias a la centralización de lineas de atención. ",
-                "Integré herramientas de analítica (Google Analytics, Gtag) para monitorear KPIs de ventas y comportamiento de usuario.",
-                "Atendía a 15 vendedores gestionando los pedidos y facturas de sus clientes"
+                "Gestión de pedidos y facturación para 15 vendedores externos",
+                "Desarrollo de e-commerce en Odoo con +300 productos",
+                "Implementación de SEO y Google Analytics",
+                "Automatización de atención con bot de WhatsApp (Botmaker)"
             ]
         },
         {
@@ -32,9 +49,9 @@ export const CV_DATA: CVData = {
             role: "Administrativo - Gestión de Licencias",
             period: "2022 – 2025",
             description: [
-                "Gestioné expedientes administrativos, manejando situaciones complejas y resolviendo conflictos.",
-                "Participé en cada sector de atención ciudadana, incluyendo datos biométricos y trámites digitales.",
-                "Supervisé canales de comunicación digital (email corporativo), asegurando respuestas ágiles a solicitudes excepcionales."
+                "Gestión de expedientes administrativos y resolución de conflictos",
+                "Atención ciudadana y trámites digitales",
+                "Supervisión de canales de comunicación digital"
             ]
         },
         {
@@ -42,9 +59,9 @@ export const CV_DATA: CVData = {
             role: "Crew",
             period: "2018 – 2021",
             description: [
-                "Desarrollé habilidades de trabajo bajo alta presión y cumplimiento estricto de estándares operativos y de seguridad.",
-                "Fomenté el trabajo en equipo en un entorno dinámico, asegurando tiempos de entrega óptimos.",
-                "Participé en todos los puestos de trabajo, demostrando adaptabilidad y habilidades técnicas."
+                "Trabajo bajo alta presión con estándares operativos estrictos",
+                "Trabajo en equipo en entorno dinámico",
+                "Adaptabilidad a diferentes puestos de trabajo"
             ]
         }
     ],

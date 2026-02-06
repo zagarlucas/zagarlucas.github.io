@@ -20,8 +20,13 @@ export interface EducationItem {
     certificateUrl?: string; // Link to diploma or certificate
 }
 
+export interface SkillCategory {
+    name: string;
+    skills: string[];
+}
+
 export interface CVData {
-    image?: string; // Added image field
+    image?: string;
     name: string;
     title: string;
     email: string;
@@ -36,4 +41,7 @@ export interface CVData {
     languages?: string[];
     softSkills?: string[];
     driverLicense?: string;
+    professionalClaim?: string;
+    valueProposition?: string[];
+    categorizedSkills?: SkillCategory[];
 }
