@@ -87,7 +87,7 @@ export default function CVPrintPage() {
                         {/* Profile */}
                         <section>
                             <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-2 pb-1 flex items-center gap-2">
-                                <span className="text-sm">👤</span>
+                                <img src="/media/nino.png" alt="Sobre mí" className="w-3.5 h-3.5 object-contain brightness-0" />
                                 SOBRE MÍ
                             </h2>
                             <div className="text-[11px] text-justify leading-snug text-slate-800 space-y-2">
@@ -100,7 +100,7 @@ export default function CVPrintPage() {
                         {/* Experience */}
                         <section>
                             <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-2 pb-1 flex items-center gap-2">
-                                <img src="/media/trabajo.png" alt="Trabajo" className="w-3 h-3 object-contain" />
+                                <img src="/media/trabajo.png" alt="Trabajo" className="w-3.5 h-3.5 object-contain brightness-0" />
                                 Experiencia Laboral
                             </h2>
                             <div className="space-y-4">
@@ -130,7 +130,7 @@ export default function CVPrintPage() {
                         {/* Education */}
                         <section>
                             <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-2 pb-1 flex items-center gap-2">
-                                <img src="/media/gorro-de-graduacion.png" alt="Educación" className="w-3 h-3 object-contain" />
+                                <img src="/media/gorro-de-graduacion.png" alt="Educación" className="w-3.5 h-3.5 object-contain brightness-0" />
                                 Educación
                             </h2>
                             <div className="space-y-3">
@@ -151,7 +151,7 @@ export default function CVPrintPage() {
                         {/* Value Proposition */}
                         <section>
                             <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-2 pb-1 flex items-center gap-2">
-                                <span className="text-sm">⭐</span>
+                                <img src="/media/propuesta-de-valor.png" alt="Propuesta de valor" className="w-3.5 h-3.5 object-contain brightness-0" />
                                 ¿QUÉ PUEDO APORTAR?
                             </h2>
                             <ul className="text-[10px] text-slate-700 space-y-1 list-disc list-inside">
@@ -186,7 +186,7 @@ export default function CVPrintPage() {
                         {/* Habilidades */}
                         <section className="mb-6">
                             <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-3 pb-1 flex items-center gap-2">
-                                <img src="/media/pantalla-del-ordenador.png" alt="Tech Stack" className="w-3 h-3 object-contain" />
+                                <img src="/media/pantalla-del-ordenador.png" alt="Tech Stack" className="w-3.5 h-3.5 object-contain brightness-0" />
                                 HABILIDADES
                             </h2>
                             <div className="space-y-4">
@@ -209,7 +209,7 @@ export default function CVPrintPage() {
                         {CV_DATA.languages && (
                             <section className="mb-6">
                                 <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-3 pb-1 flex items-center gap-2">
-                                    <span className="text-sm">🌍</span>
+                                    <img src="/media/idioma-extranjero.png" alt="Idiomas" className="w-3.5 h-3.5 object-contain brightness-0" />
                                     IDIOMAS
                                 </h2>
                                 <div className="space-y-1.5">
