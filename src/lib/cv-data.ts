@@ -49,7 +49,7 @@ export const CV_DATA: CVData = {
         {
             company: "Municipalidad de San Isidro – Licencias de Conducir",
             role: "Administrativo",
-            period: "2022 – Actualidad",
+            period: "2022 – 2025",
             description: [
                 "Gestión y organización de expedientes administrativos.",
                 "Atención al público presencial y digital.",

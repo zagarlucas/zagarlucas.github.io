@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { CV_DATA } from '@/lib/cv-data';
 import { HeaderAlt } from '@/features/cv/components/HeaderAlt';
 import { ExperienceAlt } from '@/features/cv/components/ExperienceAlt';
@@ -10,8 +9,6 @@ import { AboutMe } from '@/features/cv/components/AboutMe';
 export default function cv() {
     return (
         <main className="min-h-screen bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-cyan-900/40 via-zinc-950 to-zinc-950 text-zinc-300 font-sans selection:bg-cyan-500/30">
-
-
 
             <div className="max-w-5xl mx-auto p-6 md:p-12 lg:p-20">
                 <HeaderAlt data={CV_DATA} />
@@ -32,7 +29,6 @@ export default function cv() {
                     </div>
                 </div>
             </div>
-
 
         </main>
     );
