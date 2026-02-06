@@ -12,7 +12,7 @@ export const Skills = ({ data }: SkillsProps) => {
                 <div>
                     <div className="flex items-center gap-3 mb-6">
                         <span className="shrink-0">
-                            <img src="media/pantalla-del-ordenador.png" alt="Habilidades Tech" className="w-8 h-8 object-contain brightness-0 invert" />
+                            <img src="/media/pantalla-del-ordenador.png" alt="Habilidades Tech" className="w-8 h-8 object-contain brightness-0 invert" />
                         </span>
                         <h2 className="text-2xl font-bold text-zinc-100">Tech Stack</h2>
                     </div>
@@ -34,7 +34,7 @@ export const Skills = ({ data }: SkillsProps) => {
                         <div>
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="shrink-0">
-                                    <img src="media/cerebro.png" alt="Soft Skills" className="w-8 h-8 object-contain brightness-0 invert" />
+                                    <img src="/media/cerebro.png" alt="Soft Skills" className="w-8 h-8 object-contain brightness-0 invert" />
                                 </span>
                                 <h2 className="text-2xl font-bold text-zinc-100">Soft Skills</h2>
                             </div>

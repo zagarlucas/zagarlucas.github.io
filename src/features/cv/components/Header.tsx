@@ -38,19 +38,19 @@ export const Header = ({ data }: HeaderProps) => {
 
                 <div className="flex flex-wrap justify-center md:justify-start gap-y-2 gap-x-6 text-zinc-400 text-sm mb-6">
                     <span className="flex items-center gap-2">
-                        <img src="media/ubicacion.png" alt="Ubicación" className="w-5 h-5 object-contain brightness-0 invert" /> {data.location}
+                        <img src="/media/ubicacion.png" alt="Ubicación" className="w-5 h-5 object-contain brightness-0 invert" /> {data.location}
                     </span>
                     <span className="flex items-center gap-2">
-                        <img src="media/correo-de-propaganda.png" alt="Correo" className="w-5 h-5 object-contain brightness-0 invert" /> {data.email}
+                        <img src="/media/correo-de-propaganda.png" alt="Correo" className="w-5 h-5 object-contain brightness-0 invert" /> {data.email}
                     </span>
                     {data.phone && (
                         <span className="flex items-center gap-2">
-                            <img src="media/telefono-inteligente.png" alt="Celular" className="w-5 h-5 object-contain brightness-0 invert" /> {data.phone}
+                            <img src="/media/telefono-inteligente.png" alt="Celular" className="w-5 h-5 object-contain brightness-0 invert" /> {data.phone}
                         </span>
                     )}
                     {data.driverLicense && (
                         <span className="flex items-center gap-2">
-                            <img src="media/licencia-de-conducir.png" alt="Licencia" className="w-5 h-5 object-contain brightness-0 invert" /> {data.driverLicense}
+                            <img src="/media/licencia-de-conducir.png" alt="Licencia" className="w-5 h-5 object-contain brightness-0 invert" /> {data.driverLicense}
                         </span>
                     )}
                 </div>

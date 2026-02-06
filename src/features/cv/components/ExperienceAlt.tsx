@@ -9,7 +9,7 @@ export const ExperienceAlt = ({ data }: ExperienceProps) => {
         <section className="mb-16">
             <div className="flex items-center gap-3 mb-8">
                 <span className="shrink-0">
-                    <img src="media/trabajo.png" alt="trabajo" className="w-8 h-8 object-contain brightness-0 invert" />
+                    <img src="/media/trabajo.png" alt="trabajo" className="w-8 h-8 object-contain brightness-0 invert" />
                 </span>
                 <h2 className="text-3xl font-bold text-zinc-100">Trayectoria Profesional</h2>
             </div>

@@ -51,10 +51,22 @@ export default function CVPrintPage() {
                             <p className="text-lg text-blue-200 font-medium">{CV_DATA.title}</p>
 
                             <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-xs text-slate-300 font-semibold">
-                                <span className="flex items-center gap-1.5 whitespace-nowrap">📍 {CV_DATA.location}</span>
-                                <span className="flex items-center gap-1.5 whitespace-nowrap">✉️ {CV_DATA.email}</span>
-                                {CV_DATA.phone && <span className="flex items-center gap-1.5 whitespace-nowrap">📞 {CV_DATA.phone}</span>}
-                                {CV_DATA.driverLicense && <span className="flex items-center gap-1.5 whitespace-nowrap">🚗 {CV_DATA.driverLicense}</span>}
+                                <span className="flex items-center gap-1.5 whitespace-nowrap">
+                                    <img src="/media/ubicacion.png" alt="Ubicación" className="w-3 h-3 object-contain brightness-0 invert" /> {CV_DATA.location}
+                                </span>
+                                <span className="flex items-center gap-1.5 whitespace-nowrap">
+                                    <img src="/media/correo-de-propaganda.png" alt="Correo" className="w-3 h-3 object-contain brightness-0 invert" /> {CV_DATA.email}
+                                </span>
+                                {CV_DATA.phone && (
+                                    <span className="flex items-center gap-1.5 whitespace-nowrap">
+                                        <img src="/media/telefono-inteligente.png" alt="Celular" className="w-3 h-3 object-contain brightness-0 invert" /> {CV_DATA.phone}
+                                    </span>
+                                )}
+                                {CV_DATA.driverLicense && (
+                                    <span className="flex items-center gap-1.5 whitespace-nowrap">
+                                        <img src="/media/licencia-de-conducir.png" alt="Licencia" className="w-3 h-3 object-contain brightness-0 invert" /> {CV_DATA.driverLicense}
+                                    </span>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -75,7 +87,10 @@ export default function CVPrintPage() {
 
                         {/* Experience */}
                         <section>
-                            <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-2 pb-1">Experiencia Laboral</h2>
+                            <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-2 pb-1 flex items-center gap-2">
+                                <img src="/media/trabajo.png" alt="Trabajo" className="w-3 h-3 object-contain" />
+                                Experiencia Laboral
+                            </h2>
                             <div className="space-y-4">
                                 {CV_DATA.experience.map((exp, i) => (
                                     <div key={i}>
@@ -102,7 +117,10 @@ export default function CVPrintPage() {
 
                         {/* Education */}
                         <section>
-                            <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-2 pb-1">Educación</h2>
+                            <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-2 pb-1 flex items-center gap-2">
+                                <img src="/media/gorro-de-graduacion.png" alt="Educación" className="w-3 h-3 object-contain" />
+                                Educación
+                            </h2>
                             <div className="space-y-3">
                                 {CV_DATA.education.map((edu, i) => (
                                     <div key={i}>
@@ -149,7 +167,10 @@ export default function CVPrintPage() {
 
                         {/* Stack Tecnológico */}
                         <section className="mb-6">
-                            <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-3 pb-1">Stack Tecnológico</h2>
+                            <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-3 pb-1 flex items-center gap-2">
+                                <img src="/media/pantalla-del-ordenador.png" alt="Tech Stack" className="w-3 h-3 object-contain" />
+                                Stack Tecnológico
+                            </h2>
                             <div className="flex flex-wrap gap-1.5">
                                 {CV_DATA.skills.map((skill, i) => (
                                     <span key={i} className="text-[9px] font-bold bg-white px-2 py-0.5 rounded border border-slate-200 text-slate-700 shadow-sm uppercase">
@@ -162,7 +183,10 @@ export default function CVPrintPage() {
                         {/* Soft Skills */}
                         {CV_DATA.softSkills && (
                             <section className="mb-6">
-                                <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-3 pb-1">Competencias</h2>
+                                <h2 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 mb-3 pb-1 flex items-center gap-2">
+                                    <img src="/media/cerebro.png" alt="Soft Skills" className="w-3 h-3 object-contain" />
+                                    Competencias
+                                </h2>
                                 <ul className="text-[10px] text-slate-700 space-y-1.5 font-medium">
                                     {CV_DATA.softSkills.map((skill, i) => (
                                         <li key={i} className="flex items-center gap-2">
