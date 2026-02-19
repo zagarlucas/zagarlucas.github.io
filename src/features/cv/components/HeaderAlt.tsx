@@ -97,7 +97,7 @@ export const HeaderAlt = ({ data }: HeaderProps) => {
                         href="/cv/print"
                         className="px-6 py-2.5 bg-zinc-900/50 hover:bg-zinc-800 text-cyan-400 rounded-full text-sm font-bold transition-all border border-cyan-500/30 hover:border-cyan-400 flex items-center gap-2"
                     >
-                        <span>📄</span> Descargar CV (PDF)
+                        <span>📄</span> Versión PDF
                     </Link>
                 </div>
 

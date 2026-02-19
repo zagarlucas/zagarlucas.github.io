@@ -9,7 +9,7 @@ export const CV_DATA: CVData = {
     location: "Buenos Aires, Argentina (Zona Norte)",
     phone: "+5491168575717",
     driverLicense: "Licencia B1 (Vigente hasta 2029)",
-    about: "Soy un profesional proactivo y adaptable, con experiencia en entornos administrativos, comerciales y digitales. Trabajo con foco en la organización, la mejora de procesos y el uso de herramientas tecnológicas para optimizar la operación y la atención al cliente.\n\nA lo largo de mi recorrido laboral he combinado tareas de gestión, atención al cliente y ventas con proyectos de desarrollo web y automatización. Me destaco por mi capacidad para aprender nuevas herramientas, ordenar procesos y aportar soluciones prácticas que mejoren la eficiencia del trabajo diario. Busco seguir creciendo en roles donde pueda combinar organización, análisis y tecnología.",
+    about: "Me considero una persona proactiva y bastante adaptable. Vengo trabajando en entornos administrativos, comerciales y también digitales, donde aprendí a combinar organización con herramientas tecnológicas para que las cosas funcionen mejor en el día a día.\n\nMe gusta entender cómo funcionan los procesos, ordenarlos y, si se puede, optimizarlos. Suelo adaptarme rápido a nuevas herramientas y sistemas, y disfruto encontrar soluciones prácticas que hagan más eficiente el trabajo. Busco seguir creciendo en roles donde pueda mezclar organización, análisis y tecnología de manera concreta.",
     valueProposition: [
         "Organización y mejora de procesos.",
         "Perfil híbrido: administrativo con enfoque digital.",
@@ -19,11 +19,11 @@ export const CV_DATA: CVData = {
     categorizedSkills: [
         {
             name: "Administrativas y Comerciales",
-            skills: ["Atención al cliente", "Facturación", "Gestión de pedidos", "Soporte a equipos de venta", "Organización administrativa"]
+            skills: ["Atención al cliente", "Facturación", "Gestión de pedidos", "Soporte a equipos de venta", "Organización administrativa", "Tango Gestión"]
         },
         {
             name: "Digitales y Técnicas",
-            skills: ["HTML · CSS · Bootstrap", "Odoo", "SEO", "Google Analytics · Gtag", "Git · GitHub", "Automatización de procesos", "Bots de WhatsApp"]
+            skills: ["HTML · CSS · Bootstrap", "Odoo", "SEO", "Google Analytics · Gtag", "Git · GitHub", "Automatización de procesos", "Bots de WhatsApp", "Canva", "E-Commerce"]
         }
     ],
     skills: [
@@ -34,7 +34,7 @@ export const CV_DATA: CVData = {
             company: "Herrajes Bonzini",
             companyUrl: "https://herrajesbonzini.com.ar",
             role: "Ventas · Administración · Desarrollo Web",
-            period: "Marzo 2025 – Febrero 2026",
+            period: "03/2025 – 02/2026",
             description: [
                 "Gestión de pedidos y facturación de herrajes para clientes directos.",
                 "Atención y soporte administrativo a un equipo de 15 vendedores externos.",
@@ -49,7 +49,7 @@ export const CV_DATA: CVData = {
         {
             company: "Municipalidad de San Isidro – Licencias de Conducir",
             role: "Administrativo",
-            period: "2022 – 2025",
+            period: "07/2022 – 03/2025",
             description: [
                 "Gestión y organización de expedientes administrativos.",
                 "Atención al público presencial y digital.",
@@ -61,7 +61,7 @@ export const CV_DATA: CVData = {
         {
             company: "Arcos Dorados S.A. (McDonald’s)",
             role: "Crew",
-            period: "2018 – 2021",
+            period: "03/2018 – 08/2021",
             description: [
                 "Atención al cliente y manejo de caja.",
                 "Trabajo en equipo en entornos de alta demanda.",
