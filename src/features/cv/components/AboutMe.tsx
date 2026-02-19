@@ -10,8 +10,8 @@ export const AboutMe = ({ data }: AboutMeProps) => {
     return (
         <section className="group">
             <div className="flex items-center gap-3 mb-6">
-                <span className="shrink-0">
-                    <img src="/media/nino.png" alt="Yo" className="w-8 h-8 object-contain brightness-0 invert" />
+                <span className="shrink-0 p-2 bg-zinc-900 rounded-xl border border-zinc-800">
+                    <img src="/media/nino.png" alt="Yo" className="w-6 h-6 object-contain brightness-0 invert" />
                 </span>
                 <h2 className="text-xl font-bold text-zinc-100 uppercase tracking-wider">Sobre mí</h2>
             </div>

@@ -14,15 +14,16 @@ export const ExperienceAlt = ({ data }: ExperienceProps) => {
                 <h2 className="text-3xl font-bold text-zinc-100 uppercase tracking-tight">Experiencia Laboral</h2>
             </div>
 
-            <div className="relative space-y-16 pl-2">
-                {/* Vertical Line with Gradient */}
-                <div className="absolute top-2 left-[1.125rem] bottom-0 w-px bg-gradient-to-b from-cyan-500/50 via-zinc-800/50 to-transparent" />
+            <div className="relative space-y-16">
+                {/* Vertical Line with Gradient - Perfectly Centered at 16px */}
+                <div className="absolute top-2 left-[15px] bottom-0 w-[2px] bg-zinc-800/30" />
+                <div className="absolute top-2 left-[15px] bottom-0 w-[2px] bg-gradient-to-b from-cyan-500/50 via-zinc-800/50 to-transparent" />
 
                 {data.experience.map((exp, index) => (
                     <div key={index} className="relative pl-12 group">
-                        {/* Interactive Timeline Dot */}
-                        <div className="absolute left-0 top-1.5 w-[2.25rem] h-[2.25rem] flex items-center justify-center -translate-x-[40%]">
-                            <div className="w-3 h-3 rounded-full bg-zinc-800 border-2 border-zinc-700 group-hover:bg-cyan-500 group-hover:border-cyan-400 group-hover:scale-125 group-hover:shadow-[0_0_15px_rgba(6,182,212,0.5)] transition-all duration-500 z-10" />
+                        {/* Interactive Timeline Dot - Perfectly Centered at 16px */}
+                        <div className="absolute left-0 top-1.5 w-[32px] h-[32px] flex items-center justify-center">
+                            <div className="w-3.5 h-3.5 rounded-full bg-zinc-900 border-2 border-zinc-700 group-hover:bg-cyan-500 group-hover:border-white transition-all duration-500 z-10 shadow-[0_0_10px_rgba(0,0,0,0.5)]" />
                         </div>
 
                         <div className="flex items-center justify-between gap-4 mb-4">

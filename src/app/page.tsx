@@ -24,7 +24,7 @@ export default function cv() {
                     </div>
 
                     {/* SIDEBAR */}
-                    <div className="order-1 lg:order-2 lg:sticky lg:top-12 h-fit flex flex-col space-y-16">
+                    <div className="order-1 lg:order-2 lg:sticky lg:top-12 h-fit flex flex-col space-y-16 items-center lg:items-start">
                         <AboutMe data={CV_DATA} />
                         <Languages data={CV_DATA} />
                     </div>

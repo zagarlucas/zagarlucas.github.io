@@ -10,8 +10,8 @@ export const Languages = ({ data }: LanguagesProps) => {
     return (
         <section className="mb-12">
             <h3 className="text-xl font-bold text-zinc-100 mb-6 flex items-center gap-3 uppercase tracking-wider">
-                <span className="shrink-0">
-                    <img src="/media/idioma-extranjero.png" alt="Idiomas" className="w-7 h-7 object-contain brightness-0 invert opacity-80" />
+                <span className="shrink-0 p-2 bg-zinc-900 rounded-xl border border-zinc-800">
+                    <img src="/media/idioma-extranjero.png" alt="Idiomas" className="w-5 h-5 object-contain brightness-0 invert opacity-80" />
                 </span>
                 Idiomas
             </h3>

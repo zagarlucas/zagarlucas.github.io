@@ -32,7 +32,6 @@ export const CV_DATA: CVData = {
     experience: [
         {
             company: "Herrajes Bonzini",
-            companyUrl: "https://herrajesbonzini.com.ar",
             role: "Ventas · Administración · Desarrollo Web",
             period: "03/2025 – 02/2026",
             description: [

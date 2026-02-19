@@ -8,8 +8,8 @@ export const Education = ({ data }: EducationProps) => {
     return (
         <section className="mb-16">
             <div className="flex items-center gap-3 mb-8">
-                <span className="shrink-0">
-                    <img src="/media/gorro-de-graduacion.png" alt="Educación" className="w-8 h-8 object-contain brightness-0 invert" />
+                <span className="shrink-0 p-2 bg-zinc-900 rounded-xl border border-zinc-800">
+                    <img src="/media/gorro-de-graduacion.png" alt="Educación" className="w-6 h-6 object-contain brightness-0 invert" />
                 </span>
                 <h2 className="text-3xl font-bold text-zinc-100 uppercase tracking-tight">Formación Académica</h2>
             </div>
